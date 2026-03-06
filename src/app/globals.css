@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  /* ── V6 QUIET LUXURY ── */
+  --background: #FFFFFF;
+  --foreground: #171717;
+
+  --primary: #E8553D;
+  --primary-rgb: 232, 85, 61;
+
+  --grey-50: #F9F9F9;
+  --grey-100: #F3F4F6;
+  --grey-200: #E5E7EB;
+  --grey-800: #1F2937;
+  --grey-900: #111827;
+
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+
+  --color-grey-50: var(--grey-50);
+  --color-grey-100: var(--grey-100);
+  --color-grey-200: var(--grey-200);
+  --color-grey-300: #D1D5DB;
+  --color-grey-400: #9CA3AF;
+  --color-grey-500: #6B7280;
+  --color-grey-700: #374151;
+  --color-grey-800: var(--grey-800);
+  --color-grey-900: var(--grey-900);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+
+  --radius-xl: 32px;
+  --radius-2xl: 48px;
+}
+
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
