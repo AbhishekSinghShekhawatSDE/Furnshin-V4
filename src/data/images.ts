@@ -65,7 +65,7 @@ export const IMAGES = {
 
     // Metal / Iron — gate, railing, structural
     metal: {
-        gate: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&q=80&auto=format&fit=crop",
+        gate: "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1200&q=80&auto=format&fit=crop",
         railing: "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1200&q=80&auto=format&fit=crop",
         detail: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1200&q=80&auto=format&fit=crop",
         alt: "Custom iron gate and metal railing fabricated by Furnshin"

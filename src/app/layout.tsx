@@ -22,10 +22,48 @@ import ScrollToTop from "@/components/ui/ScrollToTop";
 import GoogleAnalytics from "@/components/layout/GoogleAnalytics";
 import SmoothScroll from "@/components/SmoothScroll";
 
+import { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0e0c0b' },
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.furnshin.com'),
-  title: "Furnshin | Factory-Direct Custom Furniture & Interiors in Jaipur",
-  description: "Trusted space transformation partner. Designing spaces that speak.",
+  title: "Furnshin | Custom Furniture & Interiors in Jaipur",
+  description: "Factory-direct custom furniture & interiors in Jaipur. Premium custom furniture, glass works, aluminum solutions, and interior manufacturing.",
+  manifest: '/site.webmanifest',
+  icons: {
+    icon: [
+      { url: '/favicon_16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon_32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon_48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon_64x64.png', sizes: '64x64', type: 'image/png' },
+      { url: '/favicon_128x128.png', sizes: '128x128', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/favicon_180x180.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'mask-icon', url: '/favicon_512x512.png', color: '#E8553D' },
+    ],
+  },
+  openGraph: {
+    title: "Furnshin | Custom Furniture & Interiors in Jaipur",
+    description: "Factory-direct custom furniture & interiors in Jaipur.",
+    url: "https://www.furnshin.com",
+    siteName: "Furnshin",
+    images: [{ url: "https://www.furnshin.com/og/home.jpg", width: 1200, height: 630 }],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@furnshin",
+  }
 };
 
 import LoadingScreen from "@/components/motion/LoadingScreen";
